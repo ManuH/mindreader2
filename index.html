@@ -1,1 +1,24 @@
-My page
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mindreader2</title>
+	<script src='mindreader20.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Mind Reader</h1>
+<img src="images/guesser.gif">
+<div id="menu">	
+		<li>First, think a number of 3 or 4 digits, say 3692, make it as complex as you want, don't worry, I can take it.</li>
+		<li>Now mix all digits of yours number, for instance, if you chosed 3692, after the mix you can get 6932.</li>
+		<li>Please deduct the smaller from the biggest number, in our example (6932 - 3692) resulting 3303 (ofcourse you can take paper and pen for this).</li>
+		<li>Finally, circle one digit, anyone excpet the zero.</li>
+		<li>Now write the remaining number below and click Read Mind so I can guess your number.</li>	
+</div>
+<br>
+<input type="text" id="input" />
+<button onclick="show()">Read Mind!</button>
+<p id="result"></p>
+<a href="index.html" id="restart"></a>
+</body>
+</html>
