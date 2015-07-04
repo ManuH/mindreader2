@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+	background-color: black;
+	color: #84c754;
+}
+a {
+	text-decoration: none;
+	color: #84c754;
+}
+#menu {
+	border: 1px solid;
+	border-radius: 4px;
+	width: 720px;
+	height: 100px;
+	padding: 10px;
+	left: 575px;
+	text-align: center;
+	position: relative;
+}
+li {
+	text-align: left;
+}
