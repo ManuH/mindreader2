@@ -52,8 +52,24 @@ function show() {
 
 function getname() {
 
-	var name = send();
-	document.getElementById('name').innerHTML = 'Well hello ' + name;
-	document.getElementById('p1').innerHTML = "My name is Verstand, I'm a mind reader";
-	document.getElementById('p2').innerHTML = "Do you want to play a game?. Click bellow and see my powers";
+	var name = document.getElementById('input').value;
+
+	if (name === '') {
+		document.getElementById('p1').innerHTML = "Come on, tell me your name";
+		document.getElementById('p2').innerHTML = "Don't be shy";
+	} else {
+
+		document.getElementById('name').innerHTML = 'Well hello ' + name;
+		document.getElementById('p1').innerHTML = "My name is Verstand, I'm a mind reader";
+		document.getElementById('p2').innerHTML = "Do you want to play a game?. Click bellow and see my powers";
+		var parent = document.getElementById("menu2");
+		var child = document.getElementById("button");
+		var child2 = document.getElementById("input");
+		parent.removeChild(child);
+		parent.removeChild(child2);
+		document.getElementById('link').innerHTML = "click me!";
+	}
+	
+	document.getElementById('input').value = "";
+
 }
