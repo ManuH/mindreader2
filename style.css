@@ -16,6 +16,7 @@ a {
 	left: 575px;
 	text-align: center;
 	position: relative;
+	overflow: auto;
 }
 li {
 	text-align: left;
