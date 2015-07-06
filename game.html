@@ -6,19 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Mind Reader</h1>
-<img src="images/guesser.gif">
-<div id="menu">	
-		<li>First, think a number of 3 or 4 digits, say 3692, make it as complex as you want, don't worry, I can take it.</li>
-		<li>Now mix all digits of yours number, for instance, if you chosed 3692, after the mix you can get 6932.</li>
-		<li>Please deduct the smaller from the biggest number, in our example (6932 - 3692) resulting 3303 (ofcourse you can take paper and pen for this).</li>
-		<li>Finally, circle one digit, anyone excpet the zero.</li>
-		<li>Now write the remaining number below and click Read Mind so I can guess your number.</li>	
+<div>
+	<div id="header">
+		<h1>Mind Reader</h1>
+	</div>
+	<div id="body">
+		<img src="images/guesser.gif">
+		<div id="menu">	
+			<li>First, think a number of 3 or 4 digits, say 3692, make it as complex as you want, don't worry, I can take it.</li>
+			<li>Now mix all digits of yours number, for instance, if you chosed 3692, after the mix you can get 6932.</li>
+			<li>Please deduct the smaller from the biggest number, in our example (6932 - 3692) resulting 3303 (ofcourse you can take paper and pen for this).</li>
+			<li>Finally, circle one digit, anyone excpet the zero.</li>
+			<li>Now write the remaining number below and click Read Mind so I can guess your number.</li>	
+		</div>
+		<br>					
+		<div id="menu2">
+			<input type="text" id="input" />
+			<button onclick="show()">Read Mind!</button>
+			<br>
+			<p id="result"></p>
+			<a href="index.html" id="restart"></a>
+		</div>
+	</div>
+	<div id="footer">
+		<li class="footerli">Follow me in my social networks! </li>
+		<li class="footerli"><br></li>
+		<li class="footerli"><a href="https://twitter.com/devmanuh"><img class="footerimg" src="icons/twitter.png"></a></li>
+		<li class="footerli"><a href=""><img class="footerimg" src="icons/github-2.png"></a></li>
+		<li class="footerli"><a href=""><img class="footerimg" src="icons/wordpress.png"></a>
+	</div>
 </div>
-<br>
-<input type="text" id="input" />
-<button onclick="show()">Read Mind!</button>
-<p id="result"></p>
-<a href="index.html" id="restart"></a>
 </body>
 </html>
